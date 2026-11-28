@@ -1,0 +1,42 @@
+
+@use '../abstracts/variables' as *;
+
+:root {
+  --text: #{$color-text};
+  --text-h: #{$color-heading};
+  --bg: #{$color-background};
+  --border: #{$color-border};
+  --accent: #{$color-accent};
+
+  --sans: #{$font-sans};
+  --heading: #{$font-heading};
+  --mono: #{$font-mono};
+
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}
